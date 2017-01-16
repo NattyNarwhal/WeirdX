@@ -1,0 +1,111 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{28984FE7-6195-4D5C-92E8-D54F2BE16D44}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WeirdX</RootNamespace>
+    <AssemblyName>WeirdX</AssemblyName>
+    <WarningLevel>4</WarningLevel>
+    <StartupObject>com.jcraft.weirdx.WeirdX</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acl.java" />
+    <Compile Include="Atom.java" />
+    <Compile Include="Client.java" />
+    <Compile Include="ClientListener.java" />
+    <Compile Include="Clients.java" />
+    <Compile Include="Clip.java" />
+    <Compile Include="ClipPixmap.java" />
+    <Compile Include="ClipRectangles.java" />
+    <Compile Include="Colormap.java" />
+    <Compile Include="CopyPaste.java" />
+    <Compile Include="Cursor.java" />
+    <Compile Include="DDXFont.java" />
+    <Compile Include="DDXWindow.java" />
+    <Compile Include="DDXWindowAlphaBackground.java" />
+    <Compile Include="DDXWindowImp.java" />
+    <Compile Include="DDXWindowImpSwing.java" />
+    <Compile Include="DDXWindowImpSwingAlphaBackground.java" />
+    <Compile Include="Depth.java" />
+    <Compile Include="DisplaySocket.java" />
+    <Compile Include="Draw.java" />
+    <Compile Include="Drawable.java" />
+    <Compile Include="DummySHAPEExtension.java" />
+    <Compile Include="Error.java" />
+    <Compile Include="Event.java" />
+    <Compile Include="Extension.java" />
+    <Compile Include="Font.java" />
+    <Compile Include="Font_CharSet.java" />
+    <Compile Include="Font_CharSet_FONTSPECIFIC.java" />
+    <Compile Include="Font_CharSet_GB2312.java" />
+    <Compile Include="Font_CharSet_JISX.java" />
+    <Compile Include="Font_CharSet_KSC5601.java" />
+    <Compile Include="Format.java" />
+    <Compile Include="GC.java" />
+    <Compile Include="Grab.java" />
+    <Compile Include="IO.java" />
+    <Compile Include="IOLSB.java" />
+    <Compile Include="IOMSB.java" />
+    <Compile Include="JRexec.java" />
+    <Compile Include="JRexecException.java" />
+    <Compile Include="Keyboard.java" />
+    <Compile Include="Keycode.java" />
+    <Compile Include="Keymap.java" />
+    <Compile Include="Keymap_101.java" />
+    <Compile Include="Keymap_de.java" />
+    <Compile Include="Keymap_gb.java" />
+    <Compile Include="Keymap_jp106.java" />
+    <Compile Include="Keymodifier.java" />
+    <Compile Include="Keymodifier_de.java" />
+    <Compile Include="Keymodifier_gb.java" />
+    <Compile Include="Keymodifier_gen.java" />
+    <Compile Include="Keymodifier_jp106.java" />
+    <Compile Include="LogoImage.java" />
+    <Compile Include="OtherClients.java" />
+    <Compile Include="Pix.java" />
+    <Compile Include="Pixmap.java" />
+    <Compile Include="Properties\AssemblyInfo.jsl" />
+    <Compile Include="Property.java" />
+    <Compile Include="Resource.java" />
+    <Compile Include="RootWindow.java" />
+    <Compile Include="SaveSet.java" />
+    <Compile Include="Screen.java" />
+    <Compile Include="Selection.java" />
+    <Compile Include="TransparentFilter.java" />
+    <Compile Include="Visual.java" />
+    <Compile Include="WeirdX.java" />
+    <Compile Include="WeirdXBeanInfo.java" />
+    <Compile Include="Window.java" />
+    <Compile Include="XDMCP.java" />
+    <Compile Include="XRexec.java" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualJSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
